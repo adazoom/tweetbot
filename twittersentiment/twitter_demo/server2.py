@@ -1,6 +1,5 @@
 import json
 import sys
-import urllib2
 from collections import defaultdict
 
 
@@ -42,12 +41,12 @@ n_tweets = float(len(pairs))
 
 top_n = 5
 most_negative = pairs[:top_n]
-most_positive = list(reversed(pairs[-top_n:]))
+#most_positive = list(reversed(pairs[-top_n:]))
 
 data = {
-    'most_positive': most_positive,
+    #'most_positive': most_positive,
     'most_negative': most_negative,
-    'average': sum(sentiment)/n_tweets
+    #'average': sum(sentiment)/n_tweets
 }
 
 pprint(zip(tweets))
