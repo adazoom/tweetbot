@@ -1,5 +1,6 @@
 import json
 import sys
+import urllib2
 from collections import defaultdict
 
 
@@ -29,7 +30,7 @@ for tweet in results['content']['statuses']:
 		'tweet_id': tweet['id_str'],
 		'tweet_text': tweet['text']
 	}
-	req = urllib2.Request('http://45.33.90.42:3000/insert_data')
+	req = urllib2.Request('http://45.33.90.42:5000/insert_data')
 	req.add_header('Content-Type', 'application/json')
 	response = urllib2.urlopen(req, json.dumps(data))
 	tweets.append(data) 
