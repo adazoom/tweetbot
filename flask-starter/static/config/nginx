@@ -1,0 +1,12 @@
+upstream app {
+  server 127.0.0.1:8080 fail_timeout=0;
+}
+
+server {
+  listen 80 default;
+  server_name 127.0.0.1;
+
+  location / {
+    proxy_pass http://jenkins;
+  }
+}
