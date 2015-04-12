@@ -1,5 +1,139 @@
-<h1> Flask is Awesome! </h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<p> You are doing it live </p>
+<head>
 
-{{ tweet }} 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project Aristotle</title>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Project Aristotle</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Tweets</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Why</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">How</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="logo.jpg"/>
+                    <h1>Mission</h1><br><br>
+                    <p>We fight against cyber-bullying. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Tweets</h1><br><br>
+                    <a href="https://twitter.com/intent/tweet?in_reply_to=559079297718419456">Reply</a>
+                    <a href="https://twitter.com/intent/retweet?tweet_id=559079297718419456">Retweet</a>
+                                <a class="twitter-timeline"  href="https://twitter.com/demopton" data-widget-id="587165223620075520">Tweets by @demopton</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Why</h1><br><br>
+                    <p>“Public shaming as a blood sport has to stop … When this happened to me 17 years ago, there was no name for it. Now we call it cyberbullying and online harassment,” a quote from Monica Lewinsky’s recent TED Talk <a href="http://www.ted.com/talks/monica_lewinsky_the_price_of_shame">The Price of Shame</a> that retriggered her social bashing from previous past events.
+However, a recent <a href="http://ideas.ted.com/want-to-help-prevent-online-bullying-comment-on-facebook/">blog</a> states that when all the toxic comments were deleted, the opinion of the public also shifted where people started to encourage and support Monica Lewinsky and her TED Talk. 
+After reading this blog, this inspired us to create a tool to fight cyber-bullying; a tool that we call “Project Aristotle”.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>How</h1><br><br>
+                    <p>Project Aristotle aims to unite people to stand up against cyber bullying by providing them with an interface to oppose negative comments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
